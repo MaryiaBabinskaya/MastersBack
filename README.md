@@ -7,9 +7,29 @@ Krakow has 13 major theaters with a permanent repertoire and many more beyond th
 Since theaters didn't want to share data via JSON or provide public APIs, custom parsers had to be written for each of Kraków's major theaters with a permanent repertoire.
 
 **Current database stats:**
-- 🎭 959 performances across all theaters
+- 🎭 266 unique plays and counting :)
+- 📅 959 performances (individual showtimes) covering May–October 2026 and not all theaters have published their autumn schedule yet!
 - 🏛️ 13 theaters covered
 - 👤 User accounts with favorites and reviews
+
+This shows just how much is happening in Poland's cultural capital. Krakowska Lornetka is here to make navigating that world a little easier :)
+
+| Theater | Performances in DB |
+|---------|----------------:|
+| Teatr w Krakowie (Słowacki Theater) | 218 |
+| Stary Teatr | 117 |
+| Scena STU | 97 |
+| Teatr Ludowy | 91 |
+| Teatr Groteska | 83 |
+| Teatr Variete | 74 |
+| Teatr Bagatela | 56 |
+| Teatr KTO | 52 |
+| Teatr Barakah | 48 |
+| Opera Krakowska | 47 |
+| Teatr Nowy Proxima | 46 |
+| Teatr Łaźnia Nowa | 25 |
+| Teatr AST | 5 |
+| **Total** | **959** |
 
 ---
 
