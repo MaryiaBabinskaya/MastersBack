@@ -1,6 +1,6 @@
-# Teatralna Plotka — Backend
+# Teatralna Plotka - Backend
 
-> Part of **Krakowska Lornetka** — one place for the entire Kraków theater scene.
+> Part of **Krakowska Lornetka** - one place for the entire Kraków theater scene.
 
 Krakow has 13 major theaters with a permanent repertoire and many more beyond that. Finding a specific play, checking if it's suitable for kids, or discovering what's on this weekend used to mean visiting each website separately. **Krakowska Lornetka** solves that! One place for the entire Krakow theater scene :)
 
@@ -16,9 +16,9 @@ Since theaters didn't want to share data via JSON or provide public APIs, custom
 ## Tech Stack
 
 - **Java 17** + **Spring Boot**
-- **SQLite** with JPA/Hibernate — lightweight database, no external server needed
-- **Jsoup** — HTML scraping library used to parse theater websites
-- **BCrypt** — all user passwords are hashed, never stored in plain text
+- **SQLite** with JPA/Hibernate - lightweight database, no external server needed
+- **Jsoup** - HTML scraping library used to parse theater websites
+- **BCrypt** - all user passwords are hashed
 
 ---
 
@@ -43,7 +43,7 @@ src/main/java/com/krakow/theaters/
 └── dto/           # data transfer objects
 ```
 
-> **Entities** are Java classes that map directly to database tables — each field becomes a column, each object becomes a row.
+> **Entities** are Java classes that map directly to database tables - each field becomes a column, each object becomes a row.
 
 ---
 
@@ -76,7 +76,7 @@ src/main/java/com/krakow/theaters/
 | GET | `/api/v1/plays` | All plays grouped by title |
 | GET | `/api/v1/plays/count-by-theatre` | Number of performances per theater |
 
-### Import — title, scene, dates
+### Import - title, scene, dates
 
 Each theater has an import endpoint that fetches the repertoire (title, scene, showtimes):
 
@@ -88,7 +88,7 @@ GET /api/v1/groteska/import
 ...
 ```
 
-### Enrich — description, cast, and more
+### Enrich - description, cast, and more
 
 After import, a second pass fetches full details for each play (description, cast, duration, gallery, YouTube trailer):
 
@@ -118,7 +118,7 @@ GET /api/v1/{theater}/enrich
 ## Security & Best Practices
 
 - Passwords hashed with **BCrypt**
-- DTO pattern — internal entities never exposed directly to the API
+- DTO pattern - internal entities never exposed directly to the API
 - `@Transactional` on all write operations
 - Lazy loading handled correctly within transaction scope
 - CORS configured for frontend integration
